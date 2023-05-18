@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        rgba(224, 224, 224, 1) 0px,
+        rgba(224, 224, 224, 1) 415px,
+        rgba(255, 255, 255, 1) 0px,
+        rgba(255, 255, 255, 1) 100px
+         );
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+}
+
+.image{
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50px;
+    width: 65px;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 45px;
+}
+
+.slideshowindicator {
+    height: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+
+}
+
+.indicator1 {
+    width: 11px;
+    height: 11px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.indicator2 {
+    width: 11px;
+    height: 11px;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.slideshowindicator div {
+    margin: 5px;
+
+}
