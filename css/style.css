@@ -22,6 +22,7 @@ nav {
         height: 100px;
     }
 }
+
 nav ul {
     height: 100%;
     width: 100%;
@@ -104,6 +105,9 @@ li {
 
 /* STEPS */
 
+.steps {
+    margin: 40px 0px;
+}
 
 .steps h2 {
     width: 90%;
@@ -160,11 +164,48 @@ li {
     .steps {
         display: grid;
         grid-template-columns: 50% 50%;
-    }
-
-        
+    }        
 }
 
+/* FREQUENTLY ASK QUESTIONS */
+
+.faq {
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 60px;
+}
+
+.faq-container {
+    margin: 20px 5% auto 5%;
+}
+
+.question {
+    width: 90%;
+    height: 34px;
+    background: #FFFFFF;
+    border-bottom: 2px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 15px 15px 0px 0px;
+    padding-left: 5%;
+    margin-top: 10px;
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+}
+
+footer {
+    height: 600px;
+}
 
 
 
