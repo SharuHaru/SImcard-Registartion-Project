@@ -9,18 +9,13 @@ body {
     width: 100%;
 }
 
-/* NAVIGATION BAR */
+/* ========================= NAVIGATION BAR ========================= */
 
+/* Mobile Design */
 nav {
     background-color: black;
     width: 100%;
     height: 45px;
-}
-
-@media (min-width: 700px) {
-    nav {
-        height: 100px;
-    }
 }
 
 nav ul {
@@ -38,7 +33,7 @@ li {
     padding: 0px 4%;
 }
 
-.nav-smart-logo{
+.logo-nav, .links-nav, .account{
     display: none;
 }
 
@@ -51,30 +46,98 @@ li {
     height: 80%;
 }
 
+/* Desktop Design */
 @media (min-width: 700px) {
-    .smarticon {
-        display: none;
+    nav {
+        /* Structure */
+        width: 90%;
+        margin: auto auto;
+        height: 100px;
+        
+        /* Layout */
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        
+        
+
+        
+    }
+
+    .logo-nav {
+        /* Structure */
+        height: 100px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        /* Layout */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+
+        
+       
+    }
+
+    .logo-nav img {
+        width: 100%;
+        max-width: 186px;
+        min-width: 150px;
+        height: 80%;
+        max-height: 82px;
+        
+    }
+
+    
+    .links-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        color: white;
+        
+
+    }
+
+    .links-nav li {
+    
+        height: 30%;
+
+        font-family: 'Outfit', Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
     }
     
-    .hamburger {
+
+    nav .account {
+        /* Layout */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        
+    }
+
+    .account img {
+        width: 30%;
+        padding-left: 10%;
+    }
+
+    .desktop-nav {
+        display: block;
+    }
+
+    .mobile-nav {
         display: none;
     }
 
-    .nav-smart-logo {
-        display: flex;
-        width:  20%;
-        height: 80%;
-    }
-
-    nav {
-        /* Padding and Margin */
-        padding: auto 10%;
-
-        display: flex;
-    }
+    
 }
 
-/* CAROUSELLLL */
+/* ========================= CAROUSEL ========================= */
 
 .carousel {
     width: 100%;
@@ -101,8 +164,6 @@ li {
     font-family: 'Outfit', sans-serif;
     text-align: left;
     margin: auto 10% 20% 10%;
-
-    opacity: ;
 }
 
 .indicator {
@@ -237,7 +298,7 @@ li {
     padding: 10% 5%;
 }
 
-.about *{
+.about * {
     display: block;
     
 }
