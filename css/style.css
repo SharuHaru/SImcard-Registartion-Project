@@ -262,6 +262,21 @@ li {
     margin: 10px auto auto 0px;
 }
 
+.about .more {
+    width: 100%;
+
+}
+
+.more ul {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+.more ul li {
+    list-style: none;
+}
 
 
 
