@@ -56,11 +56,7 @@ li {
         
         /* Layout */
         display: grid;
-        grid-template-columns: 20% 60% 20%;
-        
-        
-
-        
+        grid-template-columns: 20% 60% 20%;        
     }
 
     .logo-nav {
@@ -118,12 +114,17 @@ li {
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-        
+
+        /* Structure */
+        height: 100px;     
     }
 
     .account img {
         width: 30%;
         padding-left: 10%;
+
+        /* Structure */
+        height: 100%;
     }
 
     .desktop-nav {
@@ -140,6 +141,7 @@ li {
 /* ========================= CAROUSEL ========================= */
 
 .carousel {
+    /* Structure */
     width: 100%;
     height: 327px;
     background: url(/SImcardRegistration/Images/carousel-1.png);
@@ -149,13 +151,14 @@ li {
    
     color: white;
 
+    /* Layout */
     display: grid;
-    grid-template-rows: 95% 5%;
+    grid-template-rows: 90% 10%;
 }
 
-@media (min-width: 430px) {
+@media (min-width: 700px) {
     .carousel {
-        height: 800px;
+        height: 550px;
     }
 }
 
@@ -166,17 +169,40 @@ li {
     margin: auto 10% 20% 10%;
 }
 
-.indicator {
+.container-indicator {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
+    height: 100%;
+
+   
     
 }
 
+.indicator {
+    /* Structure */
+    width: 25%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    height: 50%;
+}
+
 .indicator div {
-    width: 11px;
-    height: 11px;
-    border-radius: 10px;
+    width: 15%;
+    height: 70%;
+    max-width: 25px;
+    max-height: 25px;
+
+    min-width: 7px;
+    min-height: 7px;
+
+    border-radius: 70%;
 
     margin: 0px 5%;
     
