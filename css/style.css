@@ -17,7 +17,7 @@ nav {
     height: 45px;
 }
 
-@media (min-width: 430px) {
+@media (min-width: 700px) {
     nav {
         height: 100px;
     }
@@ -38,14 +38,40 @@ li {
     padding: 0px 4%;
 }
 
+.nav-smart-logo{
+    display: none;
+}
 
-.smartlogo {
+.smarticon {
     height: 80%;
     
 }
 
 .hamburger {
     height: 80%;
+}
+
+@media (min-width: 700px) {
+    .smarticon {
+        display: none;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+
+    .nav-smart-logo {
+        display: flex;
+        width:  20%;
+        height: 80%;
+    }
+
+    nav {
+        /* Padding and Margin */
+        padding: auto 10%;
+
+        display: flex;
+    }
 }
 
 /* CAROUSELLLL */
@@ -203,9 +229,40 @@ li {
   
 }
 
-footer {
-    height: 600px;
+/* FOOTER  */
+
+.about {
+    border-bottom: 2px solid white;
+    height: 300px;
+    padding: 10% 5%;
 }
+
+.about *{
+    display: block;
+    
+}
+
+
+.about .smart-logo {
+    width: 30%;
+
+}
+
+.about ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    margin-top: 10px;
+    width: 60%;
+
+}
+
+.about span {
+    margin: 10px auto auto 0px;
+}
+
+
 
 
 
