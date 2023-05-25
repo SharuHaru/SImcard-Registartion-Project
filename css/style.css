@@ -139,10 +139,54 @@ nav .link-div {
     /* LAYOUT */
     display: flex;
     flex-direction: column;
+    align-items: center;
     color: white;
 }
 
+.container-register h2 {
+    /* STRUCTURE */
+    padding: 30px 0px;
 
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+
+}
+
+.container-register .slideshow {
+    background-color: aliceblue;
+    width: 80%;
+    height: 500px;
+}
+
+.container-register h3 {
+    padding: 30px 0px;
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 60px;
+
+}
+
+.container-register button {
+    width: 20%;
+
+
+    background: linear-gradient(87.43deg, #00ABE4 62.71%, #96C2DB 100%);
+    border-radius: 50px;
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 60px;
+
+    letter-spacing: 0.2px;
+}
 
 
 
