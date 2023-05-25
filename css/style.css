@@ -5,52 +5,135 @@
 }
 
 body {
-    background-color: white;
+    min-height: 11838px;
+    background-color: black;
     width: 100%;
 }
 
 /* ========================= NAVIGATION BAR ========================= */
 
-/* Mobile Design */
+/* Desktop Design */
 nav {
-    background-color: white;
-    color: black;
+    /* LAYOUT */
+    display: flex;
+    justify-content: center;
+
+    /* STRUCTURE */
+    background-color: black;
+    color: white;
     width: 100%;
-    height: 45px;
+    height: 80px;  
 }
 
+nav .site-logo {
+    /* LAYOUT */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    /* STRUCTURE */
+    width: 20%;
+ 
+
+}
+
+.site-logo span {
+    border: 3px solid #00ABE4;
+    border-radius: 0px 0px 15px 0px;
+    height: 50%;
+    width: 85%;
 
 
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: center;
+}
 
+nav .link-div {
+    width: 50%;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
 
+    
+}
 
+.link-div ul {
+    height: 40%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+  
+    
+}
 
+.link-div ul li {
+    list-style: none;
+}
 
 /* ========================= CAROUSEL ========================= */
 
 .carousel {
     /* Structure */
-    width: 100%;
-    height: 327px;
-    background: url(/SImcardRegistration/Images/carousel-1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-   
-    color: white;
+    height: 475px;
+    width: 95%;
+    border-radius: 0px 0px 200px 0px;
 
     /* Layout */
     display: grid;
-    grid-template-rows: 90% 10%;
+    grid-template-columns: 50% 50%;
+
+    font-family: 'Inter';
+    background: linear-gradient(83.82deg, #00ABE4 0%, #E9F1FA 92.02%);
 }
 
-@media (min-width: 700px) {
-    .carousel {
-        height: 550px;
-    }
+.carousel-cartoon {
+   
 }
+
+.carousel-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: 'Inter';
+}
+
+.carousel h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 60px;
+
+    color: #0F0C29;
+
+    mix-blend-mode: normal;
+
+    padding: 40px 0px
+
+}
+.carousel span {
+    width: 75%;
+    max-width: 612px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+}
+
+
+
+
 
 
 .texthero {
