@@ -8,6 +8,7 @@ body {
     min-height: 11838px;
     background-color: black;
     width: 100%;
+
 }
 
 /* ========================= NAVIGATION BAR ========================= */
@@ -97,9 +98,9 @@ nav .link-div {
     background: linear-gradient(83.82deg, #00ABE4 0%, #E9F1FA 92.02%);
 }
 
-.carousel-cartoon {
+/* .carousel-cartoon {
    
-}
+} */
 
 .carousel-text {
     display: flex;
@@ -189,4 +190,16 @@ nav .link-div {
 }
 
 
+.number-otp {
+    position: fixed;
+    margin: auto auto;
 
+
+    top: 25%;
+    left: 23%;
+    width: 60%;
+    height: 400px;
+    background-color: aqua;
+    
+    /* display: none; */
+}
