@@ -192,25 +192,12 @@ nav .link-div {
 
 .number-otp {
     position: fixed;
-    margin: auto auto;
-
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> main
 
     top: 25%;
     left: 23%;
     width: 60%;
     height: 400px;
     background-color: aqua;
-    
-<<<<<<< HEAD
     display: none;
 }
->>>>>>> Stashed changes
-=======
-    /* display: none; */
-}
->>>>>>> main
+
