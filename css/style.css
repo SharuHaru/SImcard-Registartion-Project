@@ -192,12 +192,18 @@ nav .link-div {
 
 .number-otp {
     position: fixed;
+    border-radius: 30px;
+
 
     top: 25%;
     left: 23%;
-    width: 60%;
+    width: 50%;
     height: 400px;
-    background-color: aqua;
+    background-color: rgb(255, 255, 154);
     display: none;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
