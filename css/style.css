@@ -8,6 +8,7 @@ body {
     min-height: 11838px;
     background-color: black;
     width: 100%;
+
 }
 
 /* ========================= NAVIGATION BAR ========================= */
@@ -97,9 +98,9 @@ nav .link-div {
     background: linear-gradient(83.82deg, #00ABE4 0%, #E9F1FA 92.02%);
 }
 
-.carousel-cartoon {
+/* .carousel-cartoon {
    
-}
+} */
 
 .carousel-text {
     display: flex;
@@ -189,9 +190,15 @@ nav .link-div {
 }
 
 
+.number-otp {
+    position: fixed;
+    margin: auto auto;
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> main
 
     top: 25%;
     left: 23%;
@@ -199,6 +206,11 @@ nav .link-div {
     height: 400px;
     background-color: aqua;
     
+<<<<<<< HEAD
     display: none;
 }
 >>>>>>> Stashed changes
+=======
+    /* display: none; */
+}
+>>>>>>> main
