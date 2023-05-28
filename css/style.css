@@ -8,6 +8,8 @@ body {
     min-height: 11838px;
     background-color: black;
     width: 100%;
+    font-size: 16px;
+    z-index: 99;
 
 }
 
@@ -20,11 +22,18 @@ nav {
     justify-content: center;
 
     /* STRUCTURE */
-    background-color: black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+    background: #000000;
+    border-bottom: 1px solid #98C1D9;
     color: white;
     width: 100%;
     height: 80px;  
+    z-index: 100;
 }
+
 
 nav .site-logo {
     /* LAYOUT */
@@ -34,7 +43,6 @@ nav .site-logo {
 
     /* STRUCTURE */
     width: 20%;
- 
 
 }
 
@@ -44,17 +52,17 @@ nav .site-logo {
     height: 50%;
     width: 85%;
 
-
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 600;
     line-height: 45px;
     text-align: center;
+    
 }
 
 nav .link-div {
     width: 50%;
-
+ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,11 +70,9 @@ nav .link-div {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 400;
-    font-size: 23px;
+    font-size: 1.2rem;
     line-height: 28px;
     letter-spacing: 0.2px;
-
-    
 }
 
 .link-div ul {
@@ -82,56 +88,120 @@ nav .link-div {
     list-style: none;
 }
 
+/* =============================================================================================================================================== */
+
+
 /* ========================= CAROUSEL ========================= */
 
 .container-carousel {
     /* Structure */
-    height: 475px;
+    height: 70vh;
     width: 95%;
-    border-radius: 0px 0px 200px 0px;
+    border-radius: 0px 0px 150px 0px;
+    
 
     /* Layout */
     display: grid;
     grid-template-columns: 50% 50%;
 
-    font-family: 'Inter';
     background: linear-gradient(83.82deg, #00ABE4 0%, #E9F1FA 92.02%);
+    position: relative;
+    z-index: 98;
 }
 
-/* .carousel-cartoon {
+
+
+
+.sally {
+    position: absolute;
+    z-index: 2;
+    width: 65%;
+
+}
+
+.circle1 {
+    position: absolute;
+    border: 2px solid violet;
+    width: 50%;
+    height: 70%;
+    border-radius: 50%;
+    background: rgba(5, 0, 255, 0.5);
+    filter: blur(75px);
+    top: 14%;
+    z-index: 2;
+}
+
+.circle2 {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    border: 2px solid violet;
+    width: 30%;
+    height: 40%;
+    border-radius: 50%;
+    background: #78CEFF;
+    filter: blur(50px);;
+
+}
+
+.carousel-cartoon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    max-height: 70vh;
    
-} */
+    position: relative;
+
+}
+
+
+
+
+
 
 .carousel-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    font-family: 'Inter';
-}
-
-.carousel h1 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 65px;
-    line-height: 60px;
-
+    
+    
     color: #0F0C29;
 
     mix-blend-mode: normal;
 
+    
+}
+
+.container-carousel h1 {
+    width: 75%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 4rem;
+
     padding: 40px 0px
 
 }
-.carousel span {
+.container-carousel span {
     width: 75%;
-    max-width: 612px;
+    min-width: 200px;
+    font-family: 'Outfit', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.2rem;
     line-height: 29px;
-}
+    
+    }
 
+    @media (max-width: 1024px) {
+        * {
+            font-size: 11px;
+        }
+        
+    }
 
 /* ========================= STEPS AND CLICK TO REGISTER ========================= */
 
@@ -141,25 +211,25 @@ nav .link-div {
     display: flex;
     flex-direction: column;
     align-items: center;
+ 
     color: white;
 }
 
 .container-register h2 {
     /* STRUCTURE */
-    padding: 30px 0px;
-
-    font-family: 'Outfit';
+    margin: 9vh auto 4vh auto;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 2.6rem;
+    color: #96C2DB;
 
 }
 
 .container-register .slideshow {
     background-color: aliceblue;
-    width: 80%;
-    height: 500px;
+    width: 70%;
+    height: 70vh;
 }
 
 .container-register h3 {
@@ -167,7 +237,7 @@ nav .link-div {
 
     font-family: 'Outfit';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 700; 
     font-size: 30px;
     line-height: 60px;
 
