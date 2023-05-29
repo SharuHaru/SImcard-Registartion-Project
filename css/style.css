@@ -217,7 +217,7 @@ nav .link-div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid white;
+
  
     color: white;
 }
@@ -267,13 +267,20 @@ nav .link-div {
 /* ======================= FREQUENTLY ASKED QUESTIONS ======================= */
 
 .faq-container {
-    border: 2px solid blue;
+    width: 100%;
+    height: auto;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6rem;
     
 }
 
 .faq-container h3 {
     /* STRUCTURE */
+    position: relative;
+    left: -20%;
+    margin-bottom: 3rem;
 
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -282,6 +289,45 @@ nav .link-div {
     color: #96C2DB;
 
 }
+
+.faq-container .accordion {
+    width: 70%;
+    
+    background-color: black;
+    
+}
+
+.accordion .question {
+    background-color: rgba(233, 241, 250, 1);
+    border-bottom: .15rem solid black;
+    height: 3rem;
+    padding-left: 2.5%;
+    display: flex;
+    align-items: center;
+}
+
+.question span {
+    font-family: 'Poppins';
+    font-weight: 520;
+    font-size: 1rem;
+}
+
+.accordion .hidden-answer {
+    display: none;
+}
+
+.accordion .show-answer {
+    background-color: rgba(233, 241, 250, 1);
+    padding: 1rem 2.5% 1rem 2.5%;
+    border-bottom: .15rem solid black;
+    font-family: 'Outfit';
+    
+    
+    font-size: .9em;
+
+   
+}
+
 
 .number-otp {
     position: fixed;
