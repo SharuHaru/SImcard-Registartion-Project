@@ -264,6 +264,24 @@ nav .link-div {
     
 }
 
+/* ======================= FREQUENTLY ASKED QUESTIONS ======================= */
+
+.faq-container {
+    border: 2px solid blue;
+    display: flex;
+    
+}
+
+.faq-container h3 {
+    /* STRUCTURE */
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #96C2DB;
+
+}
 
 .number-otp {
     position: fixed;
