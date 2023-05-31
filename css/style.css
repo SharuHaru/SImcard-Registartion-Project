@@ -29,7 +29,7 @@ nav {
     border-bottom: 1px solid #98C1D9;
     color: white;
     width: 100%;
-    height: 12vh;  
+    height: 85px;  
     z-index: 100;
 }
 
@@ -275,7 +275,8 @@ nav .link-div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 6rem;
+    padding-top: 10%;
+    padding-bottom: 10%;
     
 }
 
@@ -331,7 +332,50 @@ nav .link-div {
    
 }
 
+/* ======================= HELP SECTION ======================= */
 
+.help {
+    border: 2px solid green ;
+    background: #E9F1FA;
+    padding: 2% 12%;
+    height: 40vh;
+    display: flex;
+
+ 
+}
+
+.help .help-image{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 35%;
+
+}
+
+.help img {
+    height: 100%;
+    filter: drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.18));
+}
+
+.help .help-text {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 65%;
+
+
+}
+
+.help-text span {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-weight: 550;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    letter-spacing: .01rem;
+}
 .number-otp {
     position: fixed;
     border-radius: 30px;
