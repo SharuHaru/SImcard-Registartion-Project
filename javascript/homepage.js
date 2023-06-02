@@ -45,37 +45,17 @@ home.addEventListener('click', function() {
     window.location.replace("./index.html");
 });
 
-<<<<<<< Updated upstream
-//FAQs
-
-const accordion = document.querySelector('.accordion');
-console.log(accordion);
-
-accordion.addEventListener('click', function(e) {
-    const target = target.e;
-
-    if (target.contains('div') ) {
-        target.classList.remove('hidden-answer');
-        target.classList.add('show-answer');
-    }
-    
-});
-
-=======
 
 
 // =================== faqs JAVASCRIPT ===================
 
-const accordion = document.getElementsByClassName('question');
+const accordion = document.getElementsByClassName('content-container');
 
 for (i = 0; i < accordion.length; i++) {
-
-    accordion[i].addEventListener('click', function(){
-        const showdiv = document.querySelectorAll('.hidden-answer');
-        showdiv.classList.remove('hidden-answer');
-        showdiv.classList.add('show-answer');
-        
-
+    
+    accordion[i].addEventListener('click', function() {
+        this.classList.toggle('active');
     })
 }
->>>>>>> Stashed changes
+
+   
