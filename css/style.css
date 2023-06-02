@@ -301,18 +301,27 @@ nav .link-div {
 
 .faq-container .accordion {
     width: 70%;
-    
-    background-color: black;
-    
 }
 
 .accordion .question {
     background-color: rgba(233, 241, 250, 1);
-    border-bottom: .15rem solid black;
+    border-bottom: .1rem solid black;
     height: 3rem;
     padding-left: 2.5%;
     display: flex;
     align-items: center;
+    cursor: pointer;
+
+    position: relative;
+}
+
+.accordion .question img {
+    position: absolute;
+    right: 3.5%;
+    width: 1.5%;
+    height: auto;
+   
+
 }
 
 .question span {

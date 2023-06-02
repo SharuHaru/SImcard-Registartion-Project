@@ -45,6 +45,7 @@ home.addEventListener('click', function() {
     window.location.replace("./index.html");
 });
 
+<<<<<<< Updated upstream
 //FAQs
 
 const accordion = document.querySelector('.accordion');
@@ -60,3 +61,21 @@ accordion.addEventListener('click', function(e) {
     
 });
 
+=======
+
+
+// =================== faqs JAVASCRIPT ===================
+
+const accordion = document.getElementsByClassName('question');
+
+for (i = 0; i < accordion.length; i++) {
+
+    accordion[i].addEventListener('click', function(){
+        const showdiv = document.querySelectorAll('.hidden-answer');
+        showdiv.classList.remove('hidden-answer');
+        showdiv.classList.add('show-answer');
+        
+
+    })
+}
+>>>>>>> Stashed changes
