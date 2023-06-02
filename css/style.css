@@ -90,6 +90,7 @@ nav .link-div {
 
 .link-div ul li {
     list-style: none;
+    cursor: pointer;
     
 }
 
