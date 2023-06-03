@@ -129,15 +129,11 @@ nav .link-div {
 .sally {
     position: absolute;
     z-index: 2;
-    width: 55%;
+    width: 66%;
 
 }
 
-@media (max-width: 1024px) {
-    .sally {
-        width: 70%;
-    }
-}
+
 
 .circle1 {
     position: absolute;
@@ -175,41 +171,45 @@ nav .link-div {
 }
 
 .carousel-cartoon .image1 {
-    position: absolute;
+    position: relative;
     width: 20%;
-    top: 43%;
-    left: 5%;
+    top: 33%;
+    left: -35%;
+   
+    z-index: 3;
 }
 
 .carousel-cartoon .image2 {
-    position: absolute;
+    position: relative;
     width: 11%;
-    top: 25%;
-    left: 30%;
+    top: -5%;
+    left: -15%;
+    
     z-index: 2;
 }
 
 .carousel-cartoon .image3 {
-    position: absolute;
+    position: relative;
     width: 14%;
-    top: 12%;
-    left: 42%;
+    top: -29%;
+    
     z-index: 2;
 }
 
 .carousel-cartoon .image4 {
-    position: absolute;
+    position: relative;
     width: 16%;
-    top: 27%;
-    left: 60%;
+    top: -39%;
+    left: 17%;
+   
     z-index: 2;
 }
 
 .carousel-cartoon .image5 {
-    position: absolute;
-    width: 16%;
-    top: 35%;
-    left: 75%;
+    position: relative;
+    width: 20%;
+    top: -50%;
+    left: 35%;
     z-index: 2;
 }
 
@@ -258,7 +258,6 @@ nav .link-div {
 
 /* ========================= STEPS AND CLICK TO REGISTER ========================= */
 
-
 .container-register {
     /* LAYOUT */
     display: flex;
@@ -281,10 +280,118 @@ nav .link-div {
 }
 
 .container-register .slideshow {
-    background-color: aliceblue;
+    position: relative;
+    background: #E9F1FA;
     width: 70%;
     height: 70vh;
+    overflow: hidden;
 }
+
+.stepno {
+    width: 35%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.stepno h2 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 4rem;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+
+    color: #000000;
+
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
+
+}
+.slideshow .stepno span {
+    color: black;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+ 
+    letter-spacing: 0.2px;
+
+    color: #000000;
+}
+
+.slideshow .blue {
+    border-radius: 50%;
+    background: #98C1D9;
+    width: 60%;
+    height: 120%;
+    position: absolute;
+    top: 8%;
+    right: -11%;
+    z-index: 2;
+}
+
+.slideshow .blur {
+    border-radius: 50%;
+    background: #070707;
+    width: 70%;
+    height: 140%;
+    position: absolute;
+    top: 2%;
+    right: -14%;
+    background: rgba(152, 193, 217, 0.7);
+    filter: blur(150px);
+    z-index: 0;
+}
+
+.blue .emo1 {
+    position: relative;
+    width: 20%;
+    top: 48%;
+    left: 4%;
+}
+
+.blue .emo2 {
+    position: relative;
+    width: 15%;
+    top: 30%;
+    left: -25%;
+   
+}
+
+.blue .emo3 {
+    position: relative;
+    width: 30%;
+    top: 15%;
+    left: -45%;
+   
+}
+
+.blue .emo4 {
+    position: relative;
+    width: 30%;
+    top: -5%;
+    left: -68%;
+    
+}
+
+.blue .emo5 {
+    position: relative;
+    width: 28%;
+    top: -86%;
+    left: 25%;
+    
+    
+}
+
+.blue .sally2 {
+    position: relative;
+    width: 50%;
+    top: -30%;
+    left: -5%;
+}
+
+
 
 .container-register h3 {
     padding: 5% 0rem 2% 0px;
