@@ -129,8 +129,15 @@ nav .link-div {
 .sally {
     position: absolute;
     z-index: 2;
-    width: 65%;
+    width: 55%;
 
+}
+
+@media (max-width: 1024px) {
+    .sally {
+        width: 70%;
+    }
+    
 }
 
 .circle1 {
@@ -165,14 +172,47 @@ nav .link-div {
     justify-content: flex-end;
 
     max-height: 70vh;
-   
     position: relative;
-
 }
 
+.carousel-cartoon .image1 {
+    position: absolute;
+    width: 20%;
+    top: 43%;
+    left: 5%;
+}
 
+.carousel-cartoon .image2 {
+    position: absolute;
+    width: 11%;
+    top: 25%;
+    left: 30%;
+    z-index: 2;
+}
 
+.carousel-cartoon .image3 {
+    position: absolute;
+    width: 14%;
+    top: 12%;
+    left: 42%;
+    z-index: 2;
+}
 
+.carousel-cartoon .image4 {
+    position: absolute;
+    width: 16%;
+    top: 27%;
+    left: 60%;
+    z-index: 2;
+}
+
+.carousel-cartoon .image5 {
+    position: absolute;
+    width: 16%;
+    top: 35%;
+    left: 75%;
+    z-index: 2;
+}
 
 
 .carousel-text {
@@ -328,6 +368,8 @@ nav .link-div {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 
@@ -343,7 +385,7 @@ nav .link-div {
 }
 
 .accordion .content-container .answer p {
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 0rem 2rem
 }
 
 .accordion .content-container.active .answer {
