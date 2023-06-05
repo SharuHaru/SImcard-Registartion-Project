@@ -16,15 +16,35 @@ navli.addEventListener('mouseover', function(e) {
 });
 
 navli.addEventListener('mouseout', function (e) {
-        console.log(e);
-        const target = e.target;
+    const target = e.target;
 
-        if (target.matches('li') && !target.classList.contains('active-li')) {
-            target.style.color = 'inherit';
-            target.style.cursor = 'pointer';
-        }
-    });
+    if (target.matches('li') && !target.classList.contains('active-li')) {
+        target.style.color = 'inherit';
+        target.style.cursor = 'pointer';
+    }
+ });
 
+ //Footer Hover Effect
+ const footerli = document.querySelector('.footer2')
+ 
+ footerli.addEventListener('mouseover', function(e) {
+    const target = e.target;
+    if(target.matches('li')){
+        target.style.color = 'rgba(5, 0, 255, 0.5)';
+        target.style.cursor = 'pointer';
+    }
+    
+ });
+
+ footerli.addEventListener('mouseout', function (e) {
+    const target = e.target;
+
+    if (target.matches('li')) {
+        target.style.color = 'inherit';
+        target.style.cursor = 'pointer';
+    }
+ });
+    
 
 
 // Click Effect 

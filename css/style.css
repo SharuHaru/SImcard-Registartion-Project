@@ -286,6 +286,7 @@ nav .link-div {
     position: relative;
     background: #E9F1FA;
     width: 70%;
+    /* height: auto; */
     height: 70vh;
     overflow: hidden;
 }
@@ -381,17 +382,18 @@ nav .link-div {
 .blue .emo5 {
     position: relative;
     width: 28%;
-    top: -86%;
-    left: 25%;
+    top: -37%;
+    left: 20%;
     
     
 }
 
-.blue .sally2 {
+.sally2 {
     position: relative;
-    width: 50%;
-    top: -30%;
-    left: -5%;
+    width: 30%;
+    top: 10%;
+    left: 67e%;
+    z-index: 2;
 }
 
 
@@ -660,20 +662,7 @@ footer .footer-logo {
 }
 
 
-/* .number-otp {
-    position: fixed;
-    border-radius: 30px;
 
-
-    top: 25%;
-    left: 23%;
-    width: 50%;
-    height: 400px;
-    background-color: rgb(255, 255, 154);
-    display: none;
-    justify-content: center;
-    align-items: center;
-} */
 
 
 
