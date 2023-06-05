@@ -100,6 +100,10 @@ nav .link-div {
 
 }
 
+#faqs, #contacts {
+    display: none;
+}
+
 /* ======================= BODY ======================= */
 
 h2 {
@@ -311,6 +315,10 @@ footer .footer-logo {
     
 
     color: #E9F1FA;
+}
+
+.footer2 li {
+    cursor: pointer;
 }
 
 @media (max-width: 1024px) {

@@ -100,6 +100,10 @@ nav .link-div {
 
 }
 
+#faqs {
+    display: none;
+}
+
 /* ======================= MAIN SECTION ======================= */
 main {
     padding: 0% 11%;
@@ -255,6 +259,14 @@ footer .footer-logo {
     
 
     color: #E9F1FA;
+}
+
+.footer2 li {
+    cursor: pointer;
+}
+
+#privacy {
+    display: none;
 }
 
 @media (max-width: 1024px) {

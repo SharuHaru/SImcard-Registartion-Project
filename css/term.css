@@ -100,6 +100,10 @@ nav .link-div {
 
 }
 
+#faqs {
+    display: none;
+}
+
 /* ======================= MAIN SECTION ======================= */
 
 main {
@@ -252,6 +256,13 @@ footer .footer-logo {
     
 
     color: #E9F1FA;
+}
+
+#privacy {
+    display: none;
+}
+.footer2 li {
+    cursor: pointer;
 }
 
 @media (max-width: 1024px) {
