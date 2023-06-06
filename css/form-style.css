@@ -10,10 +10,10 @@ body {
 }
 
 .form-container {
-    width: 80%;
+    width: 50%;
     background-color: aliceblue;
     display: grid;
-    grid-template-columns: 50% 50%;
+    
 }
 
 .form-container div {

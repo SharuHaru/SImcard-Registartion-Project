@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/form-style.css">
+    <link rel="stylesheet" href="/css/form-style.css">
     <title>Form for Simcard Registration</title>
 </head>
 <body>
@@ -15,13 +15,14 @@
             <form action="/php/index.php">
                 <h4>Personal Data</h4>
 
+                <label for="mobile">Mobile Number</label>
+                <input type="text" id="mobile" name="mobile">
+
                 <label for="fname">First name</label>
                 <input type="text" id="fname" name="fname">
 
                 <label for="mname">Middle name</label>
                 <input type="text" id="mname" name="mname">
-
-                <input type="checkbox" name="checkbox" id="checkbox">
 
                 <label for="lname">Last name</label>
                 <input type="text" id="lname" name="lname">
@@ -42,38 +43,7 @@
             </form>
         </div>
 
-        <div class="addressinfo">
-            <h2>Profile Info</h2>
-
-            <form action="/php/index.php">
-                <h4>Personal Data</h4>
-
-                <!-- <label for="fname">First name</label>
-                <input type="text" id="fname" name="fname">
-
-                <label for="mname">Middle name</label>
-                <input type="text" id="mname" name="mname">
-
-                <input type="checkbox" name="checkbox" id="checkbox">
-
-                <label for="lname">Last name</label>
-                <input type="text" id="lname" name="lname">
-
-                <label for="date">Date of Birth</label>
-                <input type="date" id="date" name="date">
-
-                <label for="gender">Gender</label>
-                <input type="text" id="gender" name="gender">
-
-                
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password">
-
-                <label for="repassword">Re-enter password</label>
-                <input type="password" id="repassword" name="repassword"> -->
-
-            </form>
-        </div>
+    
     </div>
 
 
