@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid blue; */
+}
+
+body {
+    background-color: #EEEEEE;
+    width: 100%;
+    font-size: 16px;
+    z-index: 99;
+
+}
+
+/* ========================= NAVIGATION BAR ========================= */
+
+/* Desktop Design */
+nav {
+    /* LAYOUT */
+    display: flex;
+    justify-content: center;
+
+    /* STRUCTURE */
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+    background: #000000;
+    border-bottom: 1px solid #98C1D9;
+    color: white;
+    width: 100%;
+    height: 15vh;  
+    z-index: 100;
+}
+
+
+nav .site-logo {
+    /* LAYOUT */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    /* STRUCTURE */
+    width: 20%;
+
+}
+
+.site-logo .logo {
+    border: 3px solid #00ABE4;
+    border-radius: 0px 0px 1rem 0px;
+    height: 50%;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #E9F1FA;
+    
+    
+}
+
+nav .link-div {
+    width: 50%;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 0.2px;
+}
+
+.link-div ul {
+    height: 40%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    
+}
+
+.link-div ul li {
+    list-style: none;
+    cursor: pointer;
+    
+}
+
+.active-li {
+    list-style: none;
+    color: rgba(9, 156, 242, 1);
+
+}
+
+#faqs {
+    display: none;
+}
+
+/* ======================= MAIN SECTION ======================= */
+
+main {
+    padding: 0% 11%;
+    background: #E9F1FA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+main h2 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding: 8% 0%;
+
+
+    color: #96C2DB;
+}
+
+.term {
+    padding-bottom: 5%;
+}
+
+.term h3 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.5rem;
+
+    color: #000000;
+
+}
+
+.term p {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1rem;
+
+    color: #000000;
+
+}
+
+
+
+
+
+
+
+
+/* ======================= FOOTER SECTION ======================= */
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    
+}
+
+footer ul {
+    list-style: none;
+}
+
+.footer1 {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 3% ;
+    border-bottom: 1px solid #0076B2;
+    
+    
+}
+
+footer .footer-logo {
+    /* LAYOUT */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    /* STRUCTURE */
+    width: 30%;
+    padding-left: 5%;
+
+}
+
+.footer-logo .footlogo {
+    border: 3px solid #00ABE4;
+    border-radius: 0px 0px 15px 0px;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 0% ;
+   
+  
+
+    font-family: 'Poppins', sans-serif;;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #E9F1FA;
+    
+}
+
+.footer1 span {
+    font-family: 'Poppins', sans-serif;;
+  
+    font-weight: 600;
+    font-size: 1.3rem;
+    width: 40%;
+    text-align: center;
+}
+
+.footer1 ul {
+    width: 30%;
+    height: 6vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 5%;
+}
+
+.footer1 li {
+    height: 100%;   
+    
+}
+
+.footer1 li img {
+   width: auto;
+   height: 100%;
+}
+
+
+.footer2 {
+    width: 80%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.footer2 ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    font-family: 'Poppins', sans-serif;;
+
+    font-weight: 500;
+    font-size: 1.5rem;
+    
+
+    color: #E9F1FA;
+}
+
+#privacy {
+    display: none;
+}
+.footer2 li {
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    * {
+        font-size: 11px;
+    }
+    
+}

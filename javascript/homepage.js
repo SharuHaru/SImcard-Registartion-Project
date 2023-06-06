@@ -1,13 +1,12 @@
-//  =============== VARIABLES ===============
-const clickButton = document.querySelector('.button');
+// =================== faqs JAVASCRIPT ===================
 
+const accordion = document.getElementsByClassName('content-container');
 
-function showForm(){
-    const numberOtp = document.querySelector('.number-otp');
-    numberOtp.style.display = 'flex';
+for (i = 0; i < accordion.length; i++) {
     
-
+    accordion[i].addEventListener('click', function() {
+        this.classList.toggle('active');
+    })
 }
 
-clickButton.addEventListener('click', showForm);
-
+   

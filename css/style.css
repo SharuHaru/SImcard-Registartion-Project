@@ -5,9 +5,10 @@
 }
 
 body {
-    min-height: 11838px;
     background-color: black;
     width: 100%;
+    font-size: 16px;
+    z-index: 99;
 
 }
 
@@ -20,11 +21,18 @@ nav {
     justify-content: center;
 
     /* STRUCTURE */
-    background-color: black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+    background: #000000;
+    border-bottom: 1px solid #98C1D9;
     color: white;
     width: 100%;
-    height: 80px;  
+    height: 15vh;  
+    z-index: 100;
 }
+
 
 nav .site-logo {
     /* LAYOUT */
@@ -34,39 +42,40 @@ nav .site-logo {
 
     /* STRUCTURE */
     width: 20%;
- 
 
 }
 
-.site-logo span {
+.site-logo .logo {
     border: 3px solid #00ABE4;
-    border-radius: 0px 0px 15px 0px;
+    border-radius: 0px 0px 1rem 0px;
     height: 50%;
     width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  
 
-
-    font-family: 'Outfit';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 600;
-    line-height: 45px;
-    text-align: center;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #E9F1FA;
+    
+    
 }
 
 nav .link-div {
     width: 50%;
-
+ 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 23px;
-    line-height: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
     letter-spacing: 0.2px;
-
-    
 }
 
 .link-div ul {
@@ -74,136 +83,586 @@ nav .link-div {
     width: 90%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
   
     
 }
 
 .link-div ul li {
     list-style: none;
+    cursor: pointer;
+    
 }
+
+.active-li {
+    list-style: none;
+    color: rgba(9, 156, 242, 1);
+
+}
+
+
+
+
+
+/* =============================================================================================================================================== */
+
 
 /* ========================= CAROUSEL ========================= */
 
 .container-carousel {
     /* Structure */
-    height: 475px;
+    height: 70vh;
     width: 95%;
-    border-radius: 0px 0px 200px 0px;
+    border-radius: 0px 0px 10rem 0px;
+    
 
     /* Layout */
     display: grid;
     grid-template-columns: 50% 50%;
 
-    font-family: 'Inter';
     background: linear-gradient(83.82deg, #00ABE4 0%, #E9F1FA 92.02%);
+    position: relative;
+    top: 2vh;
+    z-index: 98;
 }
 
-/* .carousel-cartoon {
+
+
+
+.sally {
+    position: absolute;
+    z-index: 2;
+    width: 66%;
+
+}
+
+
+
+.circle1 {
+    position: absolute;
+    border: 2px solid violet;
+    width: 50%;
+    height: 70%;
+    border-radius: 50%;
+    background: rgba(5, 0, 255, 0.5);
+    filter: blur(75px);
+    top: 14%;
+    z-index: 2;
+}
+
+.circle2 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    border: 2px solid violet;
+    width: 30%;
+    height: 40%;
+    border-radius: 50%;
+    background: #78CEFF;
+    filter: blur(50px);;
+
+}
+
+.carousel-cartoon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    max-height: 70vh;
+    position: relative;
+}
+
+.carousel-cartoon .image1 {
+    position: relative;
+    width: 20%;
+    top: 33%;
+    left: -35%;
    
-} */
+    z-index: 3;
+}
+
+.carousel-cartoon .image2 {
+    position: relative;
+    width: 11%;
+    top: -5%;
+    left: -15%;
+    
+    z-index: 2;
+}
+
+.carousel-cartoon .image3 {
+    position: relative;
+    width: 14%;
+    top: -29%;
+    
+    z-index: 2;
+}
+
+.carousel-cartoon .image4 {
+    position: relative;
+    width: 16%;
+    top: -39%;
+    left: 17%;
+   
+    z-index: 2;
+}
+
+.carousel-cartoon .image5 {
+    position: relative;
+    width: 20%;
+    top: -50%;
+    left: 35%;
+    z-index: 2;
+}
+
 
 .carousel-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    font-family: 'Inter';
-}
-
-.carousel h1 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 65px;
-    line-height: 60px;
-
+    
+    
     color: #0F0C29;
 
     mix-blend-mode: normal;
 
+    
+}
+
+.container-carousel h1 {
+    width: 75%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3.2rem;
+    line-height: 4rem;
+
     padding: 40px 0px
 
 }
-.carousel span {
+.container-carousel span {
     width: 75%;
-    max-width: 612px;
+    min-width: 200px;
+    font-family: 'Poppins', sans-serif;;
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 29px;
-}
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    
+    }
 
+    @media (max-width: 1024px) {
+        * {
+            font-size: 11px;
+        }
+        
+    }
 
 /* ========================= STEPS AND CLICK TO REGISTER ========================= */
-
 
 .container-register {
     /* LAYOUT */
     display: flex;
     flex-direction: column;
     align-items: center;
+
+ 
     color: white;
 }
 
 .container-register h2 {
     /* STRUCTURE */
-    padding: 30px 0px;
-
-    font-family: 'Outfit';
+    margin: 5.8% auto 3% auto;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 2.6rem;
+    color: #96C2DB;
 
 }
 
 .container-register .slideshow {
-    background-color: aliceblue;
-    width: 80%;
-    height: 500px;
+    position: relative;
+    background: #E9F1FA;
+    width: 70%;
+    /* height: auto; */
+    height: 70vh;
+    overflow: hidden;
 }
 
-.container-register h3 {
-    padding: 30px 0px;
+.stepno {
+    width: 35%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
 
-    font-family: 'Outfit';
-    font-style: normal;
+.stepno h2 {
+    font-family: 'Poppins';
     font-weight: 700;
-    font-size: 30px;
-    line-height: 60px;
+    font-size: 4rem;
 
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+
+    color: #000000;
+
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
+
+}
+.slideshow .stepno span {
+    color: black;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+ 
+    letter-spacing: 0.2px;
+
+    color: #000000;
+}
+
+.slideshow .blue {
+    border-radius: 50%;
+    background: #98C1D9;
+    width: 60%;
+    height: 120%;
+    position: absolute;
+    top: 8%;
+    right: -11%;
+    z-index: 2;
+}
+
+.slideshow .blur {
+    border-radius: 50%;
+    background: #070707;
+    width: 70%;
+    height: 140%;
+    position: absolute;
+    top: 2%;
+    right: -14%;
+    background: rgba(152, 193, 217, 0.7);
+    filter: blur(150px);
+    z-index: 0;
+}
+
+.blue .emo1 {
+    position: relative;
+    width: 20%;
+    top: 48%;
+    left: 4%;
+}
+
+.blue .emo2 {
+    position: relative;
+    width: 15%;
+    top: 30%;
+    left: -25%;
+   
+}
+
+.blue .emo3 {
+    position: relative;
+    width: 30%;
+    top: 15%;
+    left: -45%;
+   
+}
+
+.blue .emo4 {
+    position: relative;
+    width: 30%;
+    top: -5%;
+    left: -68%;
+    
+}
+
+.blue .emo5 {
+    position: relative;
+    width: 28%;
+    top: -37%;
+    left: 20%;
+    
+    
+}
+
+.sally2 {
+    position: relative;
+    width: 30%;
+    top: 10%;
+    left: 67e%;
+    z-index: 2;
+}
+
+
+
+.container-register h3 {
+    padding: 5% 0rem 2% 0px;
+    font-family: 'Poppins', sans-serif;
+    
+    font-weight: 600;
+    font-size: 2.5rem;
+  
 }
 
 .container-register button {
+    color: white;
+    height: 10vh;
     width: 20%;
-
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    
 
     background: linear-gradient(87.43deg, #00ABE4 62.71%, #96C2DB 100%);
     border-radius: 50px;
 
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 60px;
+    
+}
 
-    letter-spacing: 0.2px;
+/* ======================= FREQUENTLY ASKED QUESTIONS ======================= */
+
+.faq-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    
+}
+
+.faq-container h3 {
+    /* STRUCTURE */
+    position: relative;
+    left: -15%;
+    margin-bottom: 3rem;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #96C2DB;
+
+}
+
+.faq-container .accordion {
+    width: 70%;
+}
+
+.accordion .question {
+    background-color: rgba(233, 241, 250, 1);
+    border-bottom: .1rem solid black;
+    height: 3rem;
+    padding-left: 2.5%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    position: relative;
+}
+
+.accordion .question img {
+    position: absolute;
+    right: 3.5%;
+    width: 1.5%;
+    height: auto;
+   
+
+}
+
+.question span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 
-.number-otp {
-    position: fixed;
-    border-radius: 30px;
+.accordion .content-container .answer {
+    background-color: rgba(233, 241, 250, 1);
+    border-bottom: .15rem solid black;
+    font-family: 'Poppins', sans-serif;;
+    font-size: .9em;
+    font-weight: 400;
+    height: 0vh;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.accordion .content-container .answer p {
+    padding: 1rem 2rem 0rem 2rem
+}
+
+.accordion .content-container.active .answer {
+    display: flex;
+    height: 13vh;  
+}
+
+.accordion .content-container.active .question span{
+    color: #00ABE4;
+}
+/* ======================= HELP SECTION ======================= */
+
+.help {
+    border: 2px solid green ;
+    background: #E9F1FA;
+    padding: 2% 12%;
+    height: 40vh;
+    display: flex;
+
+ 
+}
+
+.help .help-image{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 35%;
+
+}
+
+.help img {
+    height: 100%;
+    filter: drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.18));
+}
+
+.help .help-text {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 65%;
 
 
-    top: 25%;
-    left: 23%;
-    width: 50%;
-    height: 400px;
-    background-color: rgb(255, 255, 154);
-    display: none;
+}
+
+.help-text span {
+    font-family: 'Poppins', sans-serif;;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    letter-spacing: .01rem;
+}
+
+/* ======================= FOOTER SECTION ======================= */
+
+footer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    
+}
+
+footer ul {
+    list-style: none;
+}
+
+.footer1 {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 3% ;
+    border-bottom: 1px solid #0076B2;
+    
+    
+}
+
+footer .footer-logo {
+    /* LAYOUT */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    /* STRUCTURE */
+    width: 30%;
+    padding-left: 5%;
+
+}
+
+.footer-logo .footlogo {
+    border: 3px solid #00ABE4;
+    border-radius: 0px 0px 15px 0px;
+    width: 85%;
+    display: flex;
     justify-content: center;
     align-items: center;
+    padding: 3% 0% ;
+   
+  
+
+    font-family: 'Poppins', sans-serif;;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #E9F1FA;
+    
 }
+
+.footer1 span {
+    font-family: 'Poppins', sans-serif;;
+  
+    font-weight: 600;
+    font-size: 1.3rem;
+    width: 40%;
+    text-align: center;
+}
+
+.footer1 ul {
+    width: 30%;
+    height: 6vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 5%;
+}
+
+.footer1 li {
+    height: 100%;   
+    
+}
+
+.footer1 li img {
+   width: auto;
+   height: 100%;
+}
+
+
+.footer2 {
+    width: 80%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.footer2 ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    font-family: 'Poppins', sans-serif;;
+
+    font-weight: 500;
+    font-size: 1.5rem;
+    
+
+    color: #E9F1FA;
+}
+
+.footer2 li {
+    cursor: pointer;
+}
+
+
+
 
 
 
