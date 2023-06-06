@@ -71,33 +71,33 @@ faq.addEventListener('click', function(e) {
 });
 
 home.addEventListener('click', function() {
-    window.location.replace("/index.html");
+    window.location.replace("/Sim Registartion Project/index.html");
 });
 
 about.addEventListener('click', function() {
-    window.location.replace("/html/about-us.html");
+    window.location.replace("/Sim Registartion Project/html/about-us.html");
 });
 
 contact.addEventListener('click', function() {
-    window.location.replace("/html/contact-us.html");
+    window.location.replace("/Sim Registartion Project/html/contact-us.html");
 });
 
 account.addEventListener('click', function() {
-    window.location.replace("/html/account.html");
+    window.location.replace("/Sim Registartion Project/html/account.html");
 });
 
 abouts.addEventListener('click', function() {
-    window.location.replace("/html/about-us.html");
+    window.location.replace("/Sim Registartion Project/html/about-us.html");
 });
 
 contacts.addEventListener('click', function() {
-    window.location.replace("/html/contact-us.html");
+    window.location.replace("/Sim Registartion Project/html/contact-us.html");
 });
 
 term.addEventListener('click', function() {
-    window.location.replace("/html/term.html");
+    window.location.replace("/Sim Registartion Project/html/term.html");
 });
 
 privacy.addEventListener('click', function() {
-    window.location.replace("/html/privacy.html");
+    window.location.replace("/Sim Registartion Project/html/privacy.html");
 });
