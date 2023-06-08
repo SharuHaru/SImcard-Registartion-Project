@@ -9,12 +9,22 @@ body {
     justify-content: center;
 }
 
+
 .form-container {
-    width: 50%;
+    width: 80%;
     background-color: aliceblue;
-    display: grid;
-    
+    display: flex;
+    flex-wrap: wrap;
+
 }
+
+.form-container div {
+    border: 1px solid black;
+    width: 30%;
+    background-color: aliceblue;
+    margin: 5%;
+}
+
 
 .form-container div {
     display: flex;
@@ -29,4 +39,9 @@ body {
     flex-direction: column;
     justify-content: space-around;
 
+}
+
+button {
+    width: 25%;
+    align-self: center;
 }
