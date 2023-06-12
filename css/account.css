@@ -104,8 +104,22 @@ nav .link-div {
     display: none;
 }
 
+/* ======================= MAIN ======================= */
 
+main {
+    height: 10vh;
+}
 
+.password{
+    display: none
+}
+
+.numsub {
+    width: 10%;
+    height: auto;
+    border: 1px solid black;
+
+}
 
 
 /* ======================= FOOTER SECTION ======================= */

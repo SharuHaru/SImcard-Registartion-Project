@@ -16,3 +16,4 @@ console.log(register);
 register.addEventListener('click', function() {
     window.open("/Sim Registartion Project/html/form.html", "_blank");
 });
+
