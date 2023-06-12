@@ -258,11 +258,12 @@ footer .footer-logo {
     color: #E9F1FA;
 }
 
-#privacy {
-    display: none;
-}
 .footer2 li {
     cursor: pointer;
+}
+
+#term {
+    display: none;
 }
 
 @media (max-width: 1024px) {

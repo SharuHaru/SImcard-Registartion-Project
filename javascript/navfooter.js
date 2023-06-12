@@ -3,7 +3,6 @@
 //Hover Effect
 
 const navli = document.querySelector('.link-div ul');
-console.log(navli);
 
 navli.addEventListener('mouseover', function(e) {
     const target = e.target;

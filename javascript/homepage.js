@@ -9,4 +9,10 @@ for (i = 0; i < accordion.length; i++) {
     })
 }
 
-   
+
+const register = document.querySelector('button');
+console.log(register);
+
+register.addEventListener('click', function() {
+    window.open("/Sim Registartion Project/html/form.html", "_blank");
+});
