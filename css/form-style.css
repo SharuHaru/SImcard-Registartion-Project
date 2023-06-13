@@ -35,6 +35,12 @@ section div {
 
 section div h2 {
     padding-bottom: 5%;
+    font-size: 1.6rem;
+
+}
+
+section div span {
+    font-size: 1.1rem;
 
 }
 section .forInput {
@@ -56,15 +62,26 @@ section .forInput {
 div input, div select {
     width: 80%;
     padding: 1% .5%;
+    font-size: 1rem;
 }
 
 .forInput h4 {
     margin: 5% 0%;
+    font-size: 1.1rem;
 }
+
 label {
     font-size: .9rem;
 }
+
 button {
     width: 25%;
     align-self: center;
+}
+
+@media (max-width: 1024px) {
+    * {
+        font-size: 11px;
+    }
+    
 }
