@@ -4,43 +4,66 @@
 }
 
 body {
-    background-color: rgb(82, 82, 82);
     display: flex;
     justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
 }
-
 
 .form-container {
     width: 80%;
-    background-color: aliceblue;
-    display: flex;
-    flex-wrap: wrap;
 
 }
 
-.form-container div {
-    border: 1px solid black;
-    width: 30%;
-    background-color: aliceblue;
-    margin: 5%;
+form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
 }
 
-
-.form-container div {
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-}
-
-
-.form-container form {
+section {
     width: 80%;
+    margin: 5%;
+    /* border: 1px solid green; */
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-
+}
+section div {
+    width: 70%;
+    padding: 5% 0%;
 }
 
+section div h2 {
+    padding-bottom: 5%;
+
+}
+section .forInput {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 1.5%;
+    padding: 5%;
+    width: 70%;
+}
+
+.forInput input, .forInput select {
+    border: 0px none;
+    border-bottom: 1px solid black;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+div input, div select {
+    width: 80%;
+    padding: 1% .5%;
+}
+
+.forInput h4 {
+    margin: 5% 0%;
+}
+label {
+    font-size: .9rem;
+}
 button {
     width: 25%;
     align-self: center;
