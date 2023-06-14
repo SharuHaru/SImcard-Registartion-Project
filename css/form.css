@@ -1,19 +1,12 @@
 * {
-    margin: 0;
     padding: 0;
-    /* border: 1px solid blue; */
+    margin: 0;
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
     background-color: #E9F1FA;
-    width: 100%;
-    font-size: 16px;
-    z-index: 99;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    user-select: none;
 }
 
 /* ========================= NAVIGATION BAR ========================= */
@@ -108,134 +101,124 @@ nav .link-div {
     display: none;
 }
 
-/* ======================= MAIN ======================= */
+/* ========================= FORM MAIN========================= */
 
 h1 {
-    align-self: flex-start;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 3rem;
 
     color: #98C1D9;
-    margin: 7% 10%
-}
-
-main {
-    background-color: white;
-    width: 70%;
-    border-radius: 2rem;
-    margin-bottom: 10%;
-
-}
-
-form {
-    margin: 15%;
-    display: flex;
-    flex-direction: column;
+    margin: 7% 0% 4% 10%
 }
 
 .form-container {
+    width: 85%;
+    margin: 0 7.5%;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+form div {
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+
+section {
+    width: 100%;
+}
+
+section div {
+    width: 70%;
+    padding: 5% 10% 5% 0%;
+    margin: 0% auto;
+}
+
+section div h2 {
+    padding-bottom: 2%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+
+section div span {
+    font-size: 1rem;
+
+}
+section .forInput {
     display: flex;
     flex-direction: column;
+    border: 1px solid black;
+    border-radius: 1.5rem;
+    padding: 5%;
+    width: 70%;
+    margin: 0% auto;
+}
+
+.forInput input, .forInput select {
+    border: 0px none;
+    border-bottom: 1px solid black;;
+    margin: 1% auto 5% auto;
+}
+
+div input, div select {
+    width: 90%;
+    font-size: 1rem;
+    background-color: inherit;
+}
+
+.forInput h4 {
+    margin: 5% 5%;
+    font-size: 1.1rem;
 }
 
 label {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1rem;
-    line-height: 1.5rem;
-
-
-    letter-spacing: 0.2px;
-    text-transform: capitalize;
-
-    color: #000000;
+    font-size: .9rem;
+    margin-left: 5%;
 }
 
-input {
+.buttons {
+    width: 200%;
+    display: flex;
+    justify-content: center;
+    padding: 15% 0%;
+    
+}
+
+.buttons button {
+    margin: 0% 2%;
+    width: 15%;
+    padding: 1% 2%;
+    border-radius: .5rem;
     border: none;
-    border-bottom: 1.2px solid #5B5A5A;
-    margin-top: 2%;
-    padding: 1% 0%;
+    background-color: #00ABE4;
+
+    font-weight: 600;
+    font-size: 1.4rem;
+
+    color: #E9F1FA;
+}
+
+.cancel:hover {
+    background-color: red;
+}
+
+.submit:hover {
+    background-color: rgb(1, 224, 116);
 }
 
 .number {
-    background-image: url("/Sim Registartion Project/Images/mailmailicon.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-left: 15%; /* Adjust the padding as needed */
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: .8rem;
-    margin-bottom: 10%;
-
-}
-
-.password {
-    background-image: url("/Sim Registartion Project/Images/Vector.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-left: 5%; /* Adjust the padding as needed */
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: .8rem;
-    margin-bottom: 2%;
-
-}
-
-.checkbox {
-    display: flex;
-    flex-direction: row-reverse;
-    align-content: center;
-    margin: 2%;
-}
-
-
-.forgot {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1rem;
-    margin-top: 1%;
-}
-
-.checkdiv {
-    align-self: flex-end;
-    margin: 0px auto 0px 0px;
-}
-
-.dontaccount {
-    margin: 4% 0%;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1rem;
-    margin: 1%;
-    margin-bottom: 10%;
-}
-
-.dontaccount b {
-    color: blue;
-}
-
-
-button {
-    background: linear-gradient(87.43deg, #00ABE4 62.71%, #96C2DB 100%);
-    border: none;
-    border-radius: 1.5rem;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: white;
-
-    align-self: center;
-    width: 60%;
-    padding: 3%;
+    position: fixed;
+    top: 5%;
+    z-index: 101;
+    background-color: white;
+    width: 80%;
 }
 
 /* ======================= FOOTER SECTION ======================= */
@@ -331,6 +314,7 @@ footer .footer-logo {
     padding-top: 3%;
     padding-bottom: 3%;
 }
+
 .footer2 ul {
     width: 100%;
     display: flex;

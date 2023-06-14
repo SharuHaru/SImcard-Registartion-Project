@@ -4,15 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Sim Registartion Project/css/form-style.css">
+    <link rel="stylesheet" href="/Sim Registartion Project/css/form.css">
     <title>Form for Simcard Registration</title>
 </head>
 <body>
+
+     <!-- ======================= NAVIGATION BAR ======================= -->
+     <nav>
+        <div class="site-logo">
+            <div class="logo">Sim Registration</div>
+        </div>
+
+        <div class="link-div">
+            <ul>
+                <li id="home">Home</li>
+                <li id="about">About</li>
+                <li id="account">Account</li>
+                <li id="contact">Contact Us</li>
+                <li id="faqs">FAQs</li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ======================= BODY ======================= -->
+
+    <h1>Profile Information</h1>
+
     <div class="form-container">
+
         <form action="/Sim Registartion Project/php/form.php" method="post">
 
+            
             <div>
-
                 <section class="number">
                     <div>
                         <h2>Mobile Number Info</h2>
@@ -35,11 +58,9 @@
                 <section class="personalInfo">
                     <div>
                         <h2>Profile Info</h2>
-                        <span>Fill in the data for Mobile Number and One Time Password</span>
+                        <span>Fill in the data for your profile</span>
                     </div>
-                    
-    
-    
+        
                     <div class="forInput">
                         <h4>Personal Data</h4>
 
@@ -61,9 +82,23 @@
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                         </select>
+                    </div>
+                </section>
+
+                <section class="password">
+                    <div>
+                        <h2>Password</h2>
+                        <span>Create a strong Password</span>
+                    </div>
+                    
+                    <div class="forInput">
+                        <h4>Personal Data</h4>
         
                         <label for="password">Password</label>
                         <input type="password" id="password" name="password" required>
+    
+                        <label for="repassword">Re-enter Password</label>
+                        <input type="password" id="repassword" name="repassword" required>
                     </div>
                 </section>
             </div>
@@ -93,12 +128,11 @@
         
                 </section>
                 
-                <section class="othercon">
+                <section class="altcon">
 
                     <div>
-                        <h2>Alternative Contact Information</h2>
-                        <span>Fill in the data for your Address</span>
-
+                        <h2>Alternative Contact</h2>
+                        <span>Fill in the data for your Alternative Contacts</span>
                     </div>
     
                     <div class="forInput">
@@ -112,20 +146,47 @@
                     </div>
                 </section>
             </div>
+
+            <div class="buttons">
+                <button class="cancel">CANCEL</button>
+                <button class="submit" type="submit">CONFIRM</button>    
+            </div>
             
-           
-    
-    
-            
-            <button class="submit" type="submit">CONFIRM</button>
-            <button class="cancel">CANCEL</button>
-    
         </form>
+
+        
         
     </div>
 
-
+    <!-- ============================ FOOTER ======================== -->
+    <footer>
+        <div class="footer1">
+            <div class="footer-logo">
+                <div class="footlogo">Sim Registration</div>
+            </div>
     
-    <script src="/Sim Registartion Project/javascript/form.js"></script> 
+            <span><img src="/Sim Registartion Project/Images/circle-c.png" alt="c">2023 Sim Registration Inc.</span>
+            <ul>
+                <li><img src="/Sim Registartion Project/Images/fb-icon.png" alt="facebook"></li>
+                <li><img src="/Sim Registartion Project/Images/insta-icon.png" alt="insta"></li>
+                <li><img src="/Sim Registartion Project/Images/twitter-icon.png" alt="twitter"></li>
+                <li><img src="/Sim Registartion Project/Images/yt-icon.png" alt="youtube"></li>
+            </ul>
+        </div>
+    
+        <div class="footer2">
+            <ul>
+                <li id="contacts">Contact Us</li>
+                <li id="abouts">About Us</li>
+                <li id="term">Term of Use</li>
+                <li id="privacy">Privacy Policy</li>
+            </ul>
+        </div>
+        
+    
+    </footer>
+
+<script src="/Sim Registartion Project/javascript/navfooter.js"></script>  
+<script src="/Sim Registartion Project/javascript/form.js"></script> 
 </body>
 </html>
