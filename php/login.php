@@ -22,7 +22,7 @@ while ($row = $result->fetch_assoc()) {
 
 $stmt->close();
 
-// For MOBILE NUMBER
+// For ALL THE DATA
 $mobilequery = "SELECT MobileNumber, FirstName, MiddleName, LastName, DateofBirth, Gender, Password, Country, Province, Barangay, City, AltNumber, Email FROM userstbl WHERE UserID = ?";
 $stmt = $link->prepare($mobilequery);
 $stmt->bind_param("i", $userid);
@@ -53,8 +53,8 @@ echo <<<HTML
 <title>My Webpage</title>
 </head>
 <body>
-    <button><a href="./update.php?updateid='$userid'">UPDATE</a></button>
-    <button><a href="./delete.php?deleteid='$userid'">DELETE</a></button>
+    <button><a href="./update.php?updateid=$userid">UPDATE</a></button>
+    <button><a href="./delete.php?deleteid=$userid">DELETE</a></button>
 </body>
 </html>
 HTML;

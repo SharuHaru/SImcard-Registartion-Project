@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Sim Registartion Project/css/account.css">
+    <link rel="stylesheet" href="/css/account.css">
     <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
     <title>Contact Us</title>
@@ -29,40 +29,40 @@
 
     <!-- ============================ LogIn ======================== -->
 
+    <h1>Log in Here</h1>
+
     <main>
+        
 
-        <form action="/Sim Registartion Project/php/login.php" method="post">
-            
-            <div class="number">
-                <label for="number">MobileNumber</label>
-                <input type="number" id="number" name="number">
+            <form action="/Sim Registartion Project/php/login.php" method="post">
+                    <div class="form-container">
+                        <label for="number">Mobile Number</label>
+                        <input class="number" value="meow" type="number" id="number" name="number" required>
+        
+                        <label for="password">Password</label>
+                        <input class="password" type="password" id="password" name="password">
 
-                <div class="numsub">NEXT</div>
-            </div>
+                        <div class="checkbox">
+                            <span class="forgot">Forgot Password?</span>
 
-            <div class="password">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password">
+                            <span class="checkdiv">
+                                <input type="checkbox" id="check" name="check">
+                                <label for="check">Remember me</label>
+                            </span>
+                            
+                           
+                        </div>
 
-                <button type="submit">LOG IN</button>
-            </div>        
-        </form>
+                        <div class="dontaccount">
+                            <span>If you don't have an account you can <br> <b>Register here!</b></span>
 
-
-
-        <script>
-            const numsub = document.querySelector('.numsub');
-            const num = document.querySelector('.number')
-            const pass = document.querySelector('.password')
-
-            numsub.addEventListener('click', function(e) {
-                // event.preventDefault(); 
-                num.style.display = 'none';
-                pass.style.display = 'flex';
-            })
+                        </div>
+                    </div>
+                    <button type="submit">LOG IN</button>       
+            </form>
+        
 
 
-        </script>
     </main>
 
 
