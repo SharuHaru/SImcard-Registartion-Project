@@ -100,3 +100,11 @@ term.addEventListener('click', function() {
 privacy.addEventListener('click', function() {
     window.location.replace("/Sim Registartion Project/html/privacy.html");
 });
+
+
+const footer = document.querySelector('.footer1 ul');
+footer.addEventListener('click', function() {
+
+        window.open("https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran", "_blank"); 
+    
+});
