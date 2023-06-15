@@ -37,22 +37,38 @@
             
             <div>
                 <section class="number">
-                    <div>
-                        <h2>Mobile Number Info</h2>
-                    <span>Fill in the data for Mobile Number and One Time Password</span>
+                    <div class="mobilenum">
+                        <h2>Enter your Mobile Number</h2>
+                        <div class="inputs">
+                            <input type="number" id="MobileNumber" name="MobileNumber" required>
+                            <div class="sendotp">SEND OTP</div>
+                        </div>
+                        <label class="checkbox-label">
+                            <span class="checkbox"><input type="checkbox"></span>
+                            <span class="text">I have read and understood the <b>Terms of use</b> and I acknowledge Smart's <b>Privacy Notice</b></span>
+                        </label>
+                    </div>
 
+                    <div class="otp">
+                        <h2>Please Enter the OTP sent to your Mobile Number</h2>
+                        <div class="inputs">
+                            <input type="number" id="otp" name="otp">
+                            <div class="verify">VERIFY OTP</div>
+                        </div>
                     </div>
                     
+                    
+                    
                         
-                        <div class="forInput">
+                        <!-- <div class="forInput">
                             <h4>Mobile Data</h4>
 
                             <label for="MobileNumber">Mobile Number</label>
-                            <input type="number" id="MobileNumber" name="MobileNumber" required>
+
             
                             <label for="otp">Verify OTP</label>
                             <input type="number" id="otp" name="otp">
-                        </div> 
+                        </div>  -->
                 </section>
         
                 <section class="personalInfo">

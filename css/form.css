@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #E9F1FA;
+    background-color: #000000;
     user-select: none;
 }
 
@@ -165,6 +165,7 @@ section .forInput {
     border: 0px none;
     border-bottom: 1px solid black;;
     margin: 1% auto 5% auto;
+    padding: 2% 2%;
 }
 
 div input, div select {
@@ -215,11 +216,103 @@ label {
 
 .number {
     position: fixed;
-    top: 5%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
     z-index: 101;
     background-color: white;
-    width: 80%;
+    width: 75%;
+    height: 95vh;
+    border-radius: 2%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.number div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding-right: 0px;
+    width: 60%;
+}
+
+.mobilenum h2, .otp h2{
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+
+
+}
+
+.mobilenum .inputs, .otp .inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+
+
+}
+
+.inputs input, .inputs input{
+    width: 60%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding: 2% 2%;
+    border-radius: .5rem;
+    letter-spacing: .03rem;
+    text-align: center;
+    border: .5px solid black;
+    margin-right: 5%;
+}
+
+.checkbox-label {
+    width: 60%;
+    display: flex;
+    align-items: center;
+  }
+
+.text b{
+    color: rgb(47, 188, 235);
+
+}
+
+.checkbox-label .checkbox {
+    height: 100%;
+    width: 20%;
+}
+
+.checkbox input {
+    width: 100%;
+}
+
+div .sendotp , div .verify{
+    width: 25%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: .7rem;
+    padding: 2% 2%;
+    border-radius: .5rem;
+    text-align: center;
+    color: white;
+    border: none;
+    background-color: #00ABE4;
+}
+
+
 
 /* ======================= FOOTER SECTION ======================= */
 
