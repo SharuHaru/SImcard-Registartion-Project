@@ -203,6 +203,12 @@ input {
     margin-top: 1%;
 }
 
+.forgot:hover {
+    cursor: pointer;
+    color: #00ABE4;
+}
+
+
 .checkdiv {
     align-self: flex-end;
     margin: 0px auto 0px 0px;
@@ -223,7 +229,7 @@ input {
 }
 
 
-button {
+.login {
     background: linear-gradient(87.43deg, #00ABE4 62.71%, #96C2DB 100%);
     border: none;
     border-radius: 1.5rem;
@@ -238,6 +244,61 @@ button {
     padding: 3%;
 }
 
+
+.forgotdiv {
+    position: fixed;
+    width: 50%;
+    height: 20vh;
+    border: 1px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 2%;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+}
+
+.forgotdiv span {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 1% 1%;
+
+}
+
+.forgotdiv button {
+    background: linear-gradient(87.43deg, #00ABE4 62.71%, #96C2DB 100%);
+    border: none;
+    border-radius: .5rem;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    margin-top: 2%;
+
+    width: 20%;
+    padding: 1%;
+}
+
+.login:hover {
+    cursor: pointer;
+    background: rgb(1, 224, 116);
+
+}
+
+.dontaccount:hover {
+    cursor: pointer;
+}
 /* ======================= FOOTER SECTION ======================= */
 
 footer {
