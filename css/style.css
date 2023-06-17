@@ -36,7 +36,7 @@ nav {
     color: white;
     width: 100%;
     height: 13vh;  
-    z-index: 100;
+    z-index: 110;
 }
 
 
@@ -128,7 +128,7 @@ nav .link-div {
 
     background: linear-gradient(83.82deg, #00ABE4 0%, #E9F1FA 92.02%);
     position: relative;
-    top: 2vh;
+    top: 15vh;
     z-index: 98;
 }
 
@@ -427,6 +427,10 @@ nav .link-div {
     border: 1px solid black; 
 }
 
+.container-register button:hover {
+    cursor: pointer;
+}
+
 /* ======================= FREQUENTLY ASKED QUESTIONS ======================= */
 
 .faq-container {
@@ -459,7 +463,7 @@ nav .link-div {
 
 .accordion .question {
     background-color: rgba(233, 241, 250, 1);
-    border-bottom: .1rem solid black;
+    border-bottom: .05rem solid black;
     height: 3rem;
     padding-left: 2.5%;
     display: flex;
@@ -499,12 +503,12 @@ nav .link-div {
 }
 
 .accordion .content-container .answer p {
-    padding: 1rem 2rem 0rem 2rem
+    padding: 1rem 0rem 2rem 2rem;
 }
 
 .accordion .content-container.active .answer {
     display: flex;
-    height: 13vh;  
+    height: 15vh;  
 }
 
 .accordion .content-container.active .question span{

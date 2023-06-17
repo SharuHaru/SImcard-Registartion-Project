@@ -5,7 +5,10 @@
 }
 
 body {
-    background-color: #E9F1FA;
+    background: #000206 url("/Sim Registartion Project/Images/bg.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     width: 100%;
     font-size: 16px;
     z-index: 99;
@@ -25,7 +28,7 @@ nav {
     justify-content: center;
 
     /* STRUCTURE */
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     
@@ -138,6 +141,8 @@ form {
 .form-container {
     display: flex;
     flex-direction: column;
+    margin: auto;
+    width: 75%;
 }
 
 label {
@@ -159,17 +164,18 @@ input {
     border-bottom: 1.2px solid #5B5A5A;
     margin-top: 2%;
     padding: 1% 0%;
+    text-align: center;
+
 }
 
 .number {
     background-image: url("/Sim Registartion Project/Images/mailmailicon.png");
     background-repeat: no-repeat;
     background-size: contain;
-    padding-left: 15%; /* Adjust the padding as needed */
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: .8rem;
+    font-size: 1.3rem;
     margin-bottom: 10%;
 
 }
@@ -182,7 +188,7 @@ input {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: .8rem;
+    font-size: 1.3rem;
     margin-bottom: 2%;
 
 }
