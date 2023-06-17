@@ -48,32 +48,95 @@ while ($row = $result->fetch_assoc()) {
 
 echo <<<HTML
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My Webpage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Sim Registartion Project/css/formphp.css">
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+    <title>Document</title>
 </head>
 <body>
-    <button><a href="./update.php?updateid=$userid">UPDATE</a></button>
-    <button><a href="./delete.php?deleteid=$userid">DELETE</a></button>
+    <!-- ======================= NAVIGATION BAR ======================= -->
+    <nav>
+            <div class="site-logo">
+                <div class="logo">Sim Registration</div>
+            </div>
+
+            <div class="link-div">
+                <ul>
+                    <li class="active-li" id="home">Home</li>
+                    <li id="about">About</li>
+                    <li id="account">Account</li>
+                    <li id="contact">Contact Us</li>
+                    <li id="faqs">FAQs</li>
+                    
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <div class="users">
+                <div class="userimg">
+                    <img src="" alt="">
+                </div>
+
+                <div class="summary">
+                    <span><b>Name:</b> <span><?php echo "$fname " . "$mname " . "$lname "?></span></span>
+                    <span><b>Date of Birth:</b> <span><?php echo "$date"?></span></span>
+                    <span><b>Address:</b> <span><?php echo "$country " . "$province, " . "$barangay " . "$city "?></span></span>
+                    <span><b>Email Address:</b> <span> <?php echo "$email"?></span></span>
+                    <span><b>Gender: </b> <span><?php echo "$gender"?></span></span>
+                    <span><b>Mobile Number: </b> <span><?php echo "$mobile"?></span></span>
+                    <span><b>Alternative Contact Number: </b> <span><?php echo "$alt"?></span></span>
+                </div>
+
+                
+            </div>
+
+            
+            <div class="buttons">
+                    <button><a href="./update.php?updateid=$userid">UPDATE</a></button>
+                    <button><a href="./delete.php?deleteid=$userid">DELETE</a></button>
+                </div>
+            
+    </main>
+
+
+
+
+
+        <footer>
+        <div class="footer1">
+            <div class="footer-logo">
+                <div class="footlogo">Sim Registration</div>
+            </div>
+
+
+            <span>&#x24B8;2023 Sim Registration Inc.</span>
+
+            <ul>
+                    <li><img src="/Sim Registartion Project/Images/fb-icon.png" alt="facebook"></li>
+                    <li><img src="/Sim Registartion Project/Images/insta-icon.png" alt="insta"></li>
+                    <li><img src="/Sim Registartion Project/Images/twitter-icon.png" alt="twitter"></li>
+                    <li><img src="/Sim Registartion Project/Images/yt-icon.png" alt="youtube"></li>
+            </ul>
+        </div>
+
+        <div class="footer2">
+            <ul>
+                <li id="contacts">Contact Us</li>
+                <li id="abouts">About Us</li>
+                <li id="term">Term of Use</li>
+                <li id="privacy">Privacy Policy</li>
+            </ul>
+        </div>
+        
+
+    </footer>
 </body>
 </html>
 HTML;
-
-
-echo $mobile . "<br>";
-echo $fname . "<br>";
-echo $mname . "<br>";
-echo $lname . "<br>";
-echo $date . "<br>";
-echo $gender . "<br>";
-echo $password . "<br>";
-
-echo $country . "<br>";
-echo $province . "<br>";
-echo $barangay. "<br>";
-echo $city . "<br>";
-
-echo $alt . "<br>";
-echo $email . "<br>";
 ?>
 

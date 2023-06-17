@@ -1,4 +1,4 @@
-// =================== faqs JAVASCRIPT ===================
+// Frequently ask question function
 
 const accordion = document.getElementsByClassName('content-container');
 
@@ -10,6 +10,7 @@ for (i = 0; i < accordion.length; i++) {
 }
 
 
+// Button to registration form
 const register = document.querySelector('button');
 console.log(register);
 

@@ -25,7 +25,7 @@ nav {
     justify-content: center;
 
     /* STRUCTURE */
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     
@@ -292,7 +292,7 @@ input {
 
 .login:hover {
     cursor: pointer;
-    background: rgb(1, 224, 116);
+    background: #006395;
 
 }
 
