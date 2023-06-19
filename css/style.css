@@ -5,6 +5,8 @@
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
+
     background: #000206 url("/Sim Registartion Project/Images/bg.gif");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -424,7 +426,7 @@ nav .link-div {
 
     background: linear-gradient(87.43deg, #00ABE4 62.71%, #96C2DB 100%);
     border-radius: 1rem;
-    border: 1px solid black; 
+    border: none;
 }
 
 .container-register button:hover {

@@ -29,7 +29,7 @@ $stmt->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Sim Registartion Project/css/formphp.css">
+    <link rel="stylesheet" href="/Sim Registartion Project/css/summary.css">
     <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
     <title>Document</title>
@@ -43,7 +43,7 @@ $stmt->close();
 
             <div class="link-div">
                 <ul>
-                    <li class="active-li" id="home">Home</li>
+                    <li id="home">Home</li>
                     <li id="about">About</li>
                     <li id="account">Account</li>
                     <li id="contact">Contact Us</li>
@@ -70,8 +70,8 @@ $stmt->close();
                 </label>
 
                 <div class="buttons">
-                    <button class="back">BACK</button>
-                    <button class="register">REGISTER</button>    
+                    <!-- <button class="back">BACK</button> -->
+                    <button class="register">REGISTER</button> 
                 </div>
             </div>
 
@@ -107,8 +107,16 @@ $stmt->close();
                 <li id="privacy">Privacy Policy</li>
             </ul>
         </div>
-        
-
     </footer>
+
+    <script src="/Sim Registartion Project/javascript/navfooter.js"></script>
+    <script>
+        const but = document.querySelector('.register');
+
+        but.addEventListener('click', function() {
+        window.location.replace("/Sim Registartion Project/html/account.html");
+    });
+    </script>
+
 </body>
 </html>

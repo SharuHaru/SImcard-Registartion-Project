@@ -44,18 +44,17 @@ while ($row = $result->fetch_assoc()) {
     $alt = $row['AltNumber'];
     $email = $row['Email'];
 }
+?>
 
-
-echo <<<HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Sim Registartion Project/css/formphp.css">
+    <link rel="stylesheet" href="/Sim Registartion Project/css/login.css">
     <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
-    <title>Document</title>
+    <title><?php echo "$fname " . "$mname " . "$lname " . "Account"?></title>
 </head>
 <body>
     <!-- ======================= NAVIGATION BAR ======================= -->
@@ -66,9 +65,9 @@ echo <<<HTML
 
             <div class="link-div">
                 <ul>
-                    <li class="active-li" id="home">Home</li>
+                    <li id="home">Home</li>
                     <li id="about">About</li>
-                    <li id="account">Account</li>
+                    <li class="active-li" id="account">Account</li>
                     <li id="contact">Contact Us</li>
                     <li id="faqs">FAQs</li>
                     
@@ -79,7 +78,7 @@ echo <<<HTML
         <main>
             <div class="users">
                 <div class="userimg">
-                    <img src="" alt="">
+                    <img src="/Sim Registartion Project/Images/frog.jpg" alt="">
                 </div>
 
                 <div class="summary">
@@ -95,11 +94,33 @@ echo <<<HTML
                 
             </div>
 
+            <div class="yousure">
+                <img src="/Sim Registartion Project/Images/danger.png" alt="danger">
+                <h3>Are you sure you want to delete your account?</h3>
+                <span>You may not be able to recover your account after you confirm this action, are you sure you want to delete your account?</span>
+                <div class="buttonq">
+                    <button>CANCEL</button>
+                    <?php
+                        echo <<<HTML
+                            <button><a href="./delete.php?deleteid=$userid">CONFIRM</a></button>
+                        </div>
+                        HTML;
+                     ?>
+
+                     
+                    
+                </div>
+            </div>
             
             <div class="buttons">
-                    <button><a href="./update.php?updateid=$userid">UPDATE</a></button>
-                    <button><a href="./delete.php?deleteid=$userid">DELETE</a></button>
+                <div>
+                    <button class="update">EDIT INFORMATION</button>
+                    <button class="delete">DELETE ACCOUNT</button>
+                    <!-- <button><a href="./update.php?updateid=$userid">EDIT INFORMATION</a></button> -->
+                   
                 </div>
+                
+            </div>
             
     </main>
 
@@ -132,11 +153,18 @@ echo <<<HTML
                 <li id="privacy">Privacy Policy</li>
             </ul>
         </div>
-        
-
     </footer>
+
+    <script src="/Sim Registartion Project/javascript/navfooter.js"></script>  
+    <script>
+        const del = document.querySelector('.delete');
+        del.addEventListener('click', function() {
+            const sure = document.querySelector('.yousure');
+            sure.style.display = 'flex';
+
+            const main = document.querySelector('main');
+            main.style.backgroundColor = '#363636';
+        });
+    </script>
 </body>
 </html>
-HTML;
-?>
-

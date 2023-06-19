@@ -5,6 +5,7 @@
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
     background-color: black;
     width: 100%;
     font-size: 16px;
@@ -100,6 +101,10 @@ nav .link-div {
 
 }
 
+#faqs {
+    display: none;
+}
+
 /* ======================= Main SECTION ======================= */
 
 main {
@@ -115,7 +120,7 @@ h1 {
     font-style: normal;
     font-weight: 800;
     font-size: 3rem;
-    background-color: inherit;
+
     color: #98C1D9;
     margin: 7% 10%
 }
@@ -294,4 +299,11 @@ footer .footer-logo {
 
 .footer2 li {
     cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    * {
+        font-size: 11px;
+    }
+    
 }

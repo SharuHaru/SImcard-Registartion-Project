@@ -11,7 +11,8 @@ if(isset($_GET['deleteid'])){
     $result=mysqli_query($link, $sql);
 
     if($result){
-        echo "Deleted Successfullty";
+        header("Location: /Sim Registartion Project/index.html");
+        exit(); 
     }
     else {
         echo "not yet delleted";
