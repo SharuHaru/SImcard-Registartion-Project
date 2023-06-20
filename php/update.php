@@ -29,83 +29,103 @@ while ($row = $result->fetch_assoc()) {
     $email = $row['Email'];
 }
 
-echo $mobile . "<br>";
-echo $fname . "<br>";
-echo $mname . "<br>";
-echo $lname . "<br>";
-echo $date . "<br>";
-echo $gender . "<br>";
-echo $password . "<br>";
-
-echo $country . "<br>";
-echo $province . "<br>";
-echo $barangay. "<br>";
-echo $city . "<br>";
-
-echo $alt . "<br>";
-echo $email . "<br>";
 
 echo <<<HTML
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="/Sim Registartion Project/css/form-style.css">
+<link rel="stylesheet" href="/Sim Registartion Project/css/update.css">
 <head>
-<title>My Webpage</title>
+<link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+<title>Update</title>
 </head>
 <body>
-<div class="form-container">
-        <form action="/Sim Registartion Project/php/form.php" method="post">
+      <!-- ======================= NAVIGATION BAR ======================= -->
+      <nav>
+        <div class="site-logo">
+            <div class="logo">Sim Registration</div>
+        </div>
+
+        <div class="link-div">
+            <ul>
+                <li id="home">Home</li>
+                <li id="about">About</li>
+                <li id="account">Account</li>
+                <li id="contact">Contact Us</li>
+                <li id="faqs">FAQs</li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ======================= BODY ======================= -->
+
+    <h1>Update Information</h1>
+
+    <div class="form-container">
+
+        <form action="/Sim Registartion Project/php/summary.php" method="post">
 
             <div>
+                
+                 <section class="mobile info">
 
-                <section class="number">
                     <div>
-                        <h2>Mobile Number Info</h2>
-                        <span>Fill in the data for Mobile Number and One Time Password</span>
-
+                        <h2>Mobile Number Data</h2>
+                        <span>Fill in the data for your Alternative Contacts</span>
                     </div>
+    
+                    <div class="forInput">
+                        <h4>Mobile Number Data</h4>
                     
-                        
-                        <div class="forInput">
-                            <h4>Mobile Data</h4>
-
-                            <label for="MobileNumber">Mobile Number</label>
-                            <input type="number" id="MobileNumber" name="MobileNumber" value=$mobile>
-                        </div> 
+                        <label for="MobileNumber">Mobile Number</label>
+                        <input type="number" id="MobileNumber" name="MobileNumber" required>
+                    </div>
                 </section>
         
                 <section class="personalInfo">
                     <div>
                         <h2>Profile Info</h2>
-                        <span>Fill in the data for Mobile Number and One Time Password</span>
+                        <span>Fill in the data for your profile</span>
                     </div>
-                    
-    
-    
+        
                     <div class="forInput">
                         <h4>Personal Data</h4>
 
                         <label for="fname">First name</label>
-                        <input type="text" id="fname" name="fname">
+                        <input type="text" id="fname" name="fname" required>
         
                         <label for="mname">Middle name</label>
-                        <input type="text" id="mname" name="mname">
+                        <input type="text" id="mname" name="mname" required>
         
                         <label for="lname">Last name</label>
-                        <input type="text" id="lname" name="lname">
+                        <input type="text" id="lname" name="lname" required>
         
                         <label for="date">Date of Birth</label>
-                        <input type="date" id="date" name="date">
+                        <input type="date" id="date" name="date" required>
         
                         <label for="gender">Gender</label>
-                        <select id="gender" name="gender">
+                        <select id="gender" name="gender" required>
                             <option value="male"></option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
                         </select>
+                    </div>
+                </section>
+
+                <section class="password">
+                    <div>
+                        <h2>Password</h2>
+                        <span>Create a strong Password</span>
+                    </div>
+                    
+                    <div class="forInput">
+                        <h4>Personal Data</h4>
         
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" required>
+    
+                        <label for="repassword">Re-enter Password</label>
+                        <input type="password" id="repassword" name="repassword" required>
                     </div>
                 </section>
             </div>
@@ -121,50 +141,78 @@ echo <<<HTML
                         <h4>Address Data</h4>
 
                         <label for="country">Country</label>
-                        <input type="text" id="country" name="country">
+                        <input type="text" id="country" name="country" required>
                         
                         <label for="province">Province</label>
-                        <input type="text" id="province" name="province">
+                        <input type="text" id="province" name="province" required>
             
                         <label for="barangay">Barangay</label>
-                        <input type="text" id="barangay" name="barangay">
+                        <input type="text" id="barangay" name="barangay" required>
             
                         <label for="city">City / Municipality</label>
-                        <input type="text" id="city" name="city">
+                        <input type="text" id="city" name="city" required>
                     </div>
         
                 </section>
                 
-                <section class="othercon">
+                <section class="altcon">
 
                     <div>
-                        <h2>Alternative Contact Information</h2>
-                        <span>Fill in the data for your Address</span>
-
+                        <h2>Alternative Contact</h2>
+                        <span>Fill in the data for your Alternative Contacts</span>
                     </div>
     
                     <div class="forInput">
                         <h4>Alternate Contact Data</h4>
                     
                         <label for="alternatecontact">Alternate Contact Number</label>
-                        <input type="number" id="alternatecontact" name="alternatecontact">
+                        <input type="number" id="alternatecontact" name="alternatecontact" required>
                         
                         <label for="email">Email Address</label>
-                        <input type="text" id="email" name="email">
+                        <input type="text" id="email" name="email" required>
                     </div>
                 </section>
             </div>
+
+            <div class="buttons">
+                <button class="cancel">CANCEL</button>
+                <button class="submit" type="submit">CONFIRM</button>    
+            </div>
             
-           
-    
-    
-            
-            <button class="submit" type="submit">UPDATE</button>
-            <button class="cancel">CANCEL</button>
-    
         </form>
+
+        
         
     </div>
+
+    <!-- ============================ FOOTER ======================== -->
+    <footer>
+        <div class="footer1">
+            <div class="footer-logo">
+                <div class="footlogo">Sim Registration</div>
+            </div>
+    
+            <span>&#x24B8;2023 Sim Registration Inc.</span>
+            <ul>
+                <li><img src="/Sim Registartion Project/Images/fb-icon.png" alt="facebook"></li>
+                <li><img src="/Sim Registartion Project/Images/insta-icon.png" alt="insta"></li>
+                <li><img src="/Sim Registartion Project/Images/twitter-icon.png" alt="twitter"></li>
+                <li><img src="/Sim Registartion Project/Images/yt-icon.png" alt="youtube"></li>
+            </ul>
+        </div>
+    
+        <div class="footer2">
+            <ul>
+                <li id="contacts">Contact Us</li>
+                <li id="abouts">About Us</li>
+                <li id="term">Term of Use</li>
+                <li id="privacy">Privacy Policy</li>
+            </ul>
+        </div>
+        
+    
+    </footer>
+
 </body>
 </html>
 HTML;

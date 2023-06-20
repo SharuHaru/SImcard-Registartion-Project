@@ -97,13 +97,12 @@ while ($row = $result->fetch_assoc()) {
             <div class="yousure">
                 <img src="/Sim Registartion Project/Images/danger.png" alt="danger">
                 <h3>Are you sure you want to delete your account?</h3>
-                <span>You may not be able to recover your account after you confirm this action, are you sure you want to delete your account?</span>
+                <span>*You may not be able to recover your account after you confirm this action, are you sure you want to delete your account?</span>
                 <div class="buttonq">
-                    <button>CANCEL</button>
                     <?php
                         echo <<<HTML
+                            <button class="cancel">CANCEL</button>
                             <button><a href="./delete.php?deleteid=$userid">CONFIRM</a></button>
-                        </div>
                         HTML;
                      ?>
 
@@ -114,10 +113,12 @@ while ($row = $result->fetch_assoc()) {
             
             <div class="buttons">
                 <div>
-                    <button class="update">EDIT INFORMATION</button>
+                    <?php
+                        echo <<<HTML
+                            <button class="update"><a href="./update.php?updateid=$userid">EDIT INFORMATION</a></button>
+                        HTML;
+                     ?>
                     <button class="delete">DELETE ACCOUNT</button>
-                    <!-- <button><a href="./update.php?updateid=$userid">EDIT INFORMATION</a></button> -->
-                   
                 </div>
                 
             </div>
@@ -164,6 +165,15 @@ while ($row = $result->fetch_assoc()) {
 
             const main = document.querySelector('main');
             main.style.backgroundColor = '#363636';
+        });
+
+        const can = document.querySelector('.cancel');
+        can.addEventListener('click', function() {
+            const sure = document.querySelector('.yousure');
+            sure.style.display = 'none';
+
+            const main = document.querySelector('main');
+            main.style.backgroundColor = '#E9F1FA';
         });
     </script>
 </body>
