@@ -3,9 +3,12 @@
 include 'config.php';
 
 $num = $_POST['number'];
-$pass = $_POST['password'];
 echo $num;
-echo $pass;
+
+if(isset($_GET['lognum'])){
+    $num = $_GET['lognum'];
+}
+
 
 
 // Execute the SQL query with a WHERE clause
@@ -157,6 +160,7 @@ while ($row = $result->fetch_assoc()) {
     </footer>
 
     <script src="/Sim Registartion Project/javascript/navfooter.js"></script>  
+
     <script>
         const del = document.querySelector('.delete');
         del.addEventListener('click', function() {

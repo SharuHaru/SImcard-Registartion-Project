@@ -32,7 +32,7 @@ $stmt->close();
     <link rel="stylesheet" href="/Sim Registartion Project/css/summary.css">
     <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
-    <title>Document</title>
+    <title>Profile Summary</title>
 </head>
 <body>
     <!-- ======================= NAVIGATION BAR ======================= -->

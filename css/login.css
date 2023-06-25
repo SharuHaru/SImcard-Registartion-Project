@@ -405,3 +405,10 @@ footer .footer-logo {
 .footer2 li {
     cursor: pointer;
 }
+
+@media (max-width: 1024px) {
+    * {
+        font-size: 11px;
+    }
+    
+}
