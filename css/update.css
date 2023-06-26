@@ -126,6 +126,10 @@ form {
     
 }
 
+form div {
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
 
 section {
     width: 100%;
