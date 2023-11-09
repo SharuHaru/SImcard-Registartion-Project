@@ -75,28 +75,9 @@
     <div class="faq-container">
         <h3>Your Guide To SIM Registration</h3>
         <div class="accordion">
-            <div class="content-container">
-                <div class="question"><span>What is SIM Registration</span><img src="./Images/arrow-down.png" alt="arrowdown"></div>
-                <div class="answer"><p>Republic Act No. 11934 the SIM Registration Act requires the registration of all SIMs, including those in card and electronic form, as a prerequisite to activation. Under the measure, users of all mobile devices, including prepaid broadband devices, must register their SIMs.</p></div>
-            </div>
-            <div class="content-container">
-                <div class="question"><span>Is there a time limit for SIM registration?</span><img src="./Images/arrow-down.png" alt="arrowdown"></div>
-                <div class="answer"><p>Republic Act No. 11934 the SIM Registration Act requires the registration of all SIMs, including those in card and electronic form, as a prerequisite to activation. Under the measure, users of all mobile devices, including prepaid broadband devices, must register their SIMs.</p></div>  
-            </div>
-            
-            <div class="content-container">
-                <div class="question"><span>Can I register more than one SIM?</span><img src="./Images/arrow-down.png" alt="arrowdown"></div>
-                <div class="answer"><p>Republic Act No. 11934 the SIM Registration Act requires the registration of all SIMs, including those in card and electronic form, as a prerequisite to activation. Under the measure, users of all mobile devices, including prepaid broadband devices, must register their SIMs.</p></div>
-            </div>
-
-            <div class="content-container">
-                <div class="question"><span>Why do i need to register my sim?</span><img src="./Images/arrow-down.png" alt="arrowdown"></div>
-                <div class="answer"><p>Republic Act No. 11934 the SIM Registration Act requires the registration of all SIMs, including those in card and electronic form, as a prerequisite to activation. Under the measure, users of all mobile devices, including prepaid broadband devices, must register their SIMs.</p></div>   
-            </div>
-
-            <div class="content-container">      
-                <div class="question"><span>What will happens if I fail to register my SIM before the deadline?</span><img src="./Images/arrow-down.png" alt="arrowdown"></div>
-                <div  class="answer"><p>Republic Act No. 11934 the SIM Registration Act requires the registration of all SIMs, including those in card and electronic form, as a prerequisite to activation. Under the measure, users of all mobile devices, including prepaid broadband devices, must register their SIMs.</p></div>
+            <div class="content-container" v-for="accordion in accordions">
+                <div class="question"><span> {{ accordion.question }}</span><img src="./Images/arrow-down.png" alt="arrowdown"></div>
+                <div class="answer"><p>{{ accordion.answer }}</p></div>
             </div>
         </div>
     </div>
@@ -109,11 +90,7 @@
         </div>
         <div class="help-text">
             <span>
-                Need help registering your SIM? <br>
-                We'd be more happy to help. <br>
-                You may contact us on our social media accounts. <br>
-                You may also call our hotline <br>
-                (02) 291-6542 / (02) 291-6567
+                {{ help }}
             </span>
         </div>
     </div>
@@ -123,7 +100,7 @@
     <footer>
         <div class="footer1">
             <div class="footer-logo">
-                <div class="footlogo">Sim Registration</div>
+                <div class="footlogo">{{ title }}</div>
             </div>
 
             <span>&#x24B8;2023 Sim Registration Inc.</span>
@@ -148,7 +125,6 @@
 
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="/vuejs/homepage.js"></script>
-<!-- <script src="/javascript/homepage.js"></script>  -->
 <script src="/javascript/navfooter.js"></script> 
 </body>
 </html>
