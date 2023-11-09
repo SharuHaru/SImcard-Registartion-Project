@@ -14,17 +14,12 @@
 
     <nav>
         <div class="site-logo">
-            <div class="logo">Sim Registration</div>
+            <div class="logo">{{ title }}</div>
         </div>
 
         <div class="link-div">
             <ul>
-                <li class="active-li" id="home">Home</li>
-                <li id="about">About</li>
-                <li id="account">Account</li>
-                <li id="contact">Contact Us</li>
-                <li id="faqs">FAQs</li>
-                
+                <li v-for="menu in menus">{{ menu.name }}</li>  
             </ul>
         </div>
     </nav>
@@ -44,8 +39,8 @@
             <img src="./Images/doodle-5 3.png" alt="" class="image5">
         </div>
         <div class="carousel-text">
-            <h1>Register Your Sim<br>Now!</h1>
-            <span>Republic Act No. 11934 and commonly referred to as the SIM card law, is a Philippine law mandating the registration of SIM cards before activation. </span>
+            <h1>{{ carouselTitle }}</h1>
+            <span>{{ carouselBody }}</span>
         </div>
     </div>
 
@@ -151,9 +146,9 @@
     </footer>
 
 
-
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="/vuejs/homepage.js"></script>
-<script src="/javascript/homepage.js"></script> 
-<script src="/Sim Registartion Project/javascript/navfooter.js"></script> 
+<!-- <script src="/javascript/homepage.js"></script>  -->
+<script src="/javascript/navfooter.js"></script> 
 </body>
 </html>
