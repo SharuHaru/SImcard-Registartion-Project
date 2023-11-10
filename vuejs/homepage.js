@@ -3,11 +3,11 @@ Vue.createApp({
         return {
             title : 'Sim Registration',
             menus : [
-                {name: 'HOME', url: './index.html'},
-                {name: 'ABOUT', url: '/about-us.html'},
-                {name: 'ACCOUNT', url: '/account.html'},
-                {name: 'CONTACT US', url: '/about-us.html'},
-                {name: 'FAQs', url: '/about-us.html'}
+                {name: 'HOME', id: 'home'},
+                {name: 'ABOUT', id: 'about'},
+                {name: 'ACCOUNT', id: '/account.html'},
+                {name: 'CONTACT US', id: 'contact'},
+                {name: 'FAQs', id: 'faqs'}
 
             ],
             carouselTitle : 'Register Your Sim Now!',
@@ -22,7 +22,22 @@ Vue.createApp({
 
             ],
 
-            help : 'Need help registering your SIM? Wed be more happy to help. You may contact us on our social media accounts. You may also call our hotline (02) 291-6542 / (02) 291-6567'
+            help : 'Need help registering your SIM? Wed be more happy to help. You may contact us on our social media accounts. You may also call our hotline (02) 291-6542 / (02) 291-6567',
+
+            footer2 : [
+                {name: 'Contact Us', idName : 'contacts'},
+                {name: 'About Us', idName : 'abouts'},
+                {name: 'Term of Use', idName : 'term'},
+                {name: 'Privacy Policy', idName : 'privacy'},
+            ],
+
+            footer1 : [
+                {id : 'fb', sors : './Images/fb-icon.png'},
+                {id : 'inst', sors : './Images/insta-icon.png'},
+                {id : 'twit', sors : './Images/twitter-icon.png'},
+                {id : 'yt', sors : './Images/yt-icon.png'},
+            ]
+
             
         };
     }

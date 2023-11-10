@@ -53,6 +53,7 @@ const home = document.querySelector('#home');
 const about = document.querySelector('#about');
 const contact = document.querySelector('#contact');
 const account = document.querySelector('#account');
+
 const contacts = document.querySelector('#contacts');
 const abouts = document.querySelector('#abouts');
 const term = document.querySelector('#term');
@@ -74,7 +75,7 @@ home.addEventListener('click', function() {
 });
 
 about.addEventListener('click', function() {
-    window.location.replace("/Sim Registartion Project/html/about-us.html");
+    window.location.replace("/html/about-us.html");
 });
 
 contact.addEventListener('click', function() {

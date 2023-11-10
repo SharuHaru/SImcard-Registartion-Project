@@ -19,7 +19,7 @@
 
         <div class="link-div">
             <ul>
-                <li v-for="menu in menus">{{ menu.name }}</li>  
+                <li :id="menu.id" v-for="menu in menus">{{ menu.name }}</li>  
             </ul>
         </div>
     </nav>
@@ -105,19 +105,13 @@
 
             <span>&#x24B8;2023 Sim Registration Inc.</span>
             <ul>
-                <li id="fb"><img src="./Images/fb-icon.png" alt="facebook"></li>
-                <li id="inst"><img src="./Images/insta-icon.png" alt="insta"></li>
-                <li id="twit"><img src="./Images/twitter-icon.png" alt="twitter"></li>
-                <li id="yt"><img src="./Images/yt-icon.png" alt="youtube"></li>
+                <li :id="foot.id" v-for="foot in footer1"><img :src="foot.sors"></li>
             </ul>
         </div>
 
         <div class="footer2">
             <ul>
-                <li id="contacts">Contact Us</li>
-                <li id="abouts">About Us</li>
-                <li id="term">Term of Use</li>
-                <li id="privacy">Privacy Policy</li>
+                <li :id="foot.idName" v-for = "foot in footer2" >{{ foot.name }}</li>
             </ul>
         </div>
     </footer>
@@ -125,6 +119,7 @@
 
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="/vuejs/homepage.js"></script>
+<script src="/javascript/navfooter.js"></script>
 <script src="/javascript/navfooter.js"></script> 
 </body>
 </html>
